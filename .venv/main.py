@@ -28,6 +28,7 @@ print(f"Residual Sum of Squares (RSS): {rss}")
 print(f"Root Mean Square Error (RMSE): {rmse} %")
 
 plt.figure(figsize=(10, 5))
+plt.ylim(bottom=0, top=max(measurements)*1.1)
 plt.plot(time, measurements, label='Original', alpha=0.6)
 plt.plot(time, smoothed, label='Smoothed', color='green')
 plt.xlabel('Time (h)')
